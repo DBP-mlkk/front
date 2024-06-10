@@ -21,6 +21,7 @@ body {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-top: 20px; /* 가입하기 박스를 아래로 이동 */
 }
 
 .signup-wrapper > h2 {
@@ -97,5 +98,5 @@ body {
 }
 
 .email-wrapper {
-    margin-bottom: 32px; /* 이메일 부분과 가입하기 버튼 사이의 여백 */
+    margin-bottom: 60px; /* 이메일 부분과 가입하기 버튼 사이의 여백 */
 }
