@@ -69,34 +69,9 @@ body {
     color: #666;
 }
 
-#login-form input[type="checkbox"] + label {
-    cursor: pointer;
-    padding-left: 30px;
-    background-image: url("checkbox.png");
-    background-repeat: no-repeat;
-    background-size: 20px;
-    display: inline-block;
-    margin-bottom: 16px;
-}
-
-#login-form input[type="checkbox"]:checked + label {
-    background-image: url("checkbox-active.png");
-}
-
-/* 기존 CSS 코드에서 추가된 부분 */
-
 .checkbox-wrapper {
-    text-align: left;
-    margin-bottom: 16px;
-}
-
-.checkbox-wrapper input[type="checkbox"] {
-    display: none;
-}
-
-/* 기존 CSS 코드에서 수정된 부분 */
-
-.checkbox-wrapper {
+    display: flex;
+    align-items: center;
     text-align: left;
     margin-bottom: 16px;
     position: relative;
@@ -106,27 +81,24 @@ body {
     display: none;
 }
 
-.checkbox-wrapper label {
-    color: #666;
-    cursor: pointer;
-    padding-left: 30px;
-    display: inline-block;
-    margin-bottom: 16px;
-}
-
-.checkbox-icon {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+.checkbox-wrapper .checkbox-icon {
     width: 20px;
     height: 20px;
-    background-image: url("checkbox.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
 }
 
-#realRemember:checked + .checkbox-icon {
-    background-image: url("checkbox-active.png");
+.checkbox-wrapper input[type="checkbox"]:checked + .checkbox-icon {
+    
+    border-color: #466ADB;
 }
 
+.checkbox-wrapper .checkbox-text {
+    color: #666;
+    cursor: pointer;
+}
