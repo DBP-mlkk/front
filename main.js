@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Enter 키 이벤트 리스너 추가
     searchBox.addEventListener('keydown', handleKeyDown);
 
+    // 회원가입 버튼 클릭 이벤트 리스너 추가
+    const supportbutton = document.querySelector('.support-button');
+    supportbutton.addEventListener('click', );
+
     // 로그인 버튼 클릭 이벤트 리스너 추가
     const loginButton = document.querySelector('.login-button');
     loginButton.addEventListener('click', goToLogin);

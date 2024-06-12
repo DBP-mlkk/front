@@ -100,7 +100,7 @@ body {
     margin: 0 5px; /* 좌우 여백 설정 */
 }
 
-/* 나머지 CSS는 이전과 동일 */
+/* 추가된 CSS */
 .header-buttons {
     position: absolute;
     top: 10px;
@@ -108,7 +108,8 @@ body {
 }
 
 .login-button,
-.register-button {
+.register-button,
+.support-button {
     padding: 8px 16px;
     margin-left: 10px;
     font-size: 14px;
@@ -119,6 +120,6 @@ body {
     color: white;
 }
 
-.register-button {
-    background-color: #007bff;
+.support-button {
+    margin-left: 0; /* 첫 번째 버튼이므로 왼쪽 마진을 0으로 설정 */
 }
